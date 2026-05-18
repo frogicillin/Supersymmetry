@@ -13,7 +13,7 @@ def get_mods_kvp(folder):
             mod_name = None
             project_id = None
             file_id = None
-            with open(os.path.join(folder, filename)) as f:
+            with open(os.path.join(folder, filename), encoding='utf-8') as f:
                 for line in f:
                     line = line.strip()
                     if "=" in line:
